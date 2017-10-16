@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Reprogramafy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="logo-branco.png" alt="logo reprogramafy">
+      </div>
+      <!--<button>Login</button>-->
+      <button id="botao">Login</button>
+      <!--ação para o botão, script.js-->
+    </nav>
+  </header>
+  <main>
+    <h1>Sua música. Sua programação.</h1>
+    <h2>Qualquer semelhança com outras plataformas é mera coincidência.</h2>
+  </main>
+
+  <!--incluir div fundo para quando abrir modal, mudar o tom da cor do fundo -->
+  <div id="fundo">
+    <!--incluir tela de login-->
+    <form action="" class="intro-conteudo" id="modal">
+      <!--incluir id aqui para o java script-->
+      <div>
+        <img src="img/logo-vertical.png" alt="Logo Reprogramafy">
+      </div>
+      <div>
+        <input class="input_do_form" type="email" required placeholder="Email">
+        <!--incluir required, que se não estiver preenchido o navegador recusa-->
+      </div>
+      <div>
+        <input class="input_do_form" type="password" required placeholder="Senha">
+      </div>
+      <input type="submit"  class="logar" value="Logar">
+      <button type="button" id="botao_fechar">X</button>  <!--quando cria botao dentro do formulario, padrao submit. nesse caso, type button, deixa de submeter o form-->
+    </form>
+  </div>
+
+  <!--incluir aqui script-->
+  <script src="script.js"></script>
+</body>
+
+</html>
