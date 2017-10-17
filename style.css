@@ -66,10 +66,12 @@ main {
      /*esconde form para ser chamado depois dinamicamente pelo javascript*/
     /*display: none; */
     /*como a div fundo deslocou o form precisa arrumar*/
-    left: 50%;
+    /*left: 50%;
     top: 50%;
     position: relative;
-    transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);*/
+    /*alteracao com login tela errada, mudar animacao*/
+    margin: auto;
 
 
 }
@@ -110,7 +112,63 @@ main {
 }
 
 #fundo.visivel{
-  display: block;
-
-  
+  /*animacao login errado*/
+  /*display: block;*/ 
+  display: flex;
 }
+
+
+ #player{
+  display:flex;
+  background: rgba(0,0,0,.4);
+  text-align: center;
+ }
+.player-tempo{
+  display: flex;
+  align-items: center;
+    
+}
+.player-tempo span{
+  margin: 0 8px
+}
+.musica {
+  flex-grow: 1;
+}
+.player-barra{
+  flex-grow: 1;
+  height: 4px;   /*mesma altura da barra tocado*/
+  background: #777;
+ 
+}
+.tocado{
+  background: #fff;
+  /*width: 30%;*/
+  height: 4px; /*mesma altura da barr player*/
+}
+
+.botao-play{
+  background: none;
+  border: none;
+}
+.erro{  /*colocar animação tela de login errado.*/
+ border: 1px solid red;
+ animation: shake 0.2s; /*animação tempo e pode-se colocar o numero de repetiçoes da animacao*/
+}
+
+@keyframes shake{
+  0%{
+    transform: none;
+  }
+  33%{
+    transform: translateX(-5px);
+  }
+  66%{
+    transform: translateX(5px);
+  }
+  100%{
+    transform: none;
+  }
+
+
+}
+
